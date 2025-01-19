@@ -2,7 +2,7 @@
 
 Playing around with fasm the flat assembler to see how tiny we can create executables and to refresh my assembly skills
 
-## building
+## Building executables
 
 ```
 sudo apt install fasm
