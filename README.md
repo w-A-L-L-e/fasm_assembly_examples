@@ -50,3 +50,34 @@ to display text. All in a binary that is statically linked and is only 445 bytes
 ls -lh loopmacro
 -rwxrwxr-x 1 wschrep wschrep 445 Jan 19 22:03 loopmacro
 ```
+
+## DISASSEMBLE
+
+How to disassemble these binaries, a little howto:
+
+```
+readelf -e ./loopmacro
+
+# => copy the Entry point address
+# Now start gdb  (or gf2)
+
+gdb ./loopmacro
+
+# write b for break, then * then the address found at Entry point adress with readelf above
+b *0x4000ec
+
+# start tui
+tui enable
+
+# now show asm code:
+layout asm
+
+# now run in gdb
+run
+
+# now step using 'ni' command
+ni
+
+# show all registers
+tui reg all
+```
