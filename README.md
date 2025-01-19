@@ -81,3 +81,7 @@ ni
 # show all registers
 tui reg all
 ```
+
+## Inspiration and links
+
+Got interested again into assembly thanks to this project from tsoding https://github.com/tsoding/todo.asm
