@@ -1,6 +1,25 @@
-# fasm_assembly_examples
+# FASM examples
 
-Playing around with fasm the flat assembler to see how tiny we can create executables and to refresh my assembly skills
+Playing around with fasm: the flat assembler in linux.
+Wanted to see how tiny we can create executables and to refresh my assembly skills again in 2025.
+Fasm is way better than nasm in that it also allows you to create macros to get clean looking assembly code ;).
+Check out loopmacro.asm it has nested forloops using macros that make it look almost like python code.
+
+Snippet of the main entry point in loopmacro.asm:
+
+```
+start:
+  for counter, 1, 5
+    print_number counter
+    write newline, 1
+
+    for i, 1, 3
+      write message, message_len
+    endfor i
+  endfor counter
+
+  exit 0
+```
 
 ## Building executables
 
