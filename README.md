@@ -101,13 +101,10 @@ ni
 tui reg all
 ```
 
-## Inspiration and links
-
-Got interested again into assembly thanks to this project from tsoding https://github.com/tsoding/todo.asm
-
 ## Easier disassemble using a python script
 
-Just run this with python and it will perform above readelf and gdb commands automatically:
+Just run this script with python and it will perform above readelf and gdb commands automatically
+and basically open any wanted executable with gdb and show you all registers + start debugging the instructions.
 
 ```
 pip install pexpect
@@ -116,3 +113,7 @@ python disassemble.py ./hello_fasm
 
 This goes to breakpoint and shows the assembly tui view. Also it runs one step with ni so you can just press enter
 multiple times now to step through each asm instruction manually.
+
+## Inspiration and links
+
+Got interested again into assembly thanks to this project from tsoding https://github.com/tsoding/todo.asm
