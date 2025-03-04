@@ -1,4 +1,4 @@
-all: hello_fasm example1 example2 loopmacro
+all: hello_fasm example1 example2 loopmacro mmap_example
 
 hello_fasm: hello_fasm.asm
 	fasm hello_fasm.asm 
@@ -16,6 +16,9 @@ loopmacro: loopmacro.asm
 	fasm loopmacro.asm 
 	chmod +x loopmacro
 
+mmap_example: mmap_example.asm
+	fasm mmap_example.asm
+	chmod +x mmap_example
 
 clean:
 	rm hello_fasm example1 example2 loopmacro
