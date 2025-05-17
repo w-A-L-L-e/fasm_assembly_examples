@@ -24,8 +24,8 @@ start:
 ## Building executables
 
 ```
-sudo apt install fasm
-make
+$ sudo apt install fasm
+$ make
 ```
 
 You now see executables created for the asm files using fasm.
@@ -34,7 +34,7 @@ They are working and absolutely tiny !
 ## Running
 
 ```
-./loopmacro
+$ ./loopmacro
 1
 Dit is een zinnetje voor Noah met assembler
 Dit is een zinnetje voor Noah met assembler
@@ -66,7 +66,7 @@ This nested loops example has some nice macros to do for loops in assembly and d
 to display text. All in a binary that is statically linked and is only 445 bytes large!
 
 ```
-ls -lh loopmacro
+$ ls -lh loopmacro
 -rwxrwxr-x 1 wschrep wschrep 445 Jan 19 22:03 loopmacro
 ```
 
@@ -75,7 +75,7 @@ ls -lh loopmacro
 Here the first 91 Fibonacci numbers calculated using an executable that is static and only 374 bytes:
 
 ```
-./fib
+$ ./fib
 0
 1
 1
@@ -96,6 +96,14 @@ Here the first 91 Fibonacci numbers calculated using an executable that is stati
 1100087778366101931
 1779979416004714189
 2880067194370816120
+
+
+$ ls -lh fib
+-rwxrwxr-x 1 wschrep wschrep 374 May 17 22:56 fib
+
+
+$ ldd fib
+	not a dynamic executable
 ```
 
 ## DISASSEMBLE
