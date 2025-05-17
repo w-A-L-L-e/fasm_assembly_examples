@@ -70,6 +70,34 @@ ls -lh loopmacro
 -rwxrwxr-x 1 wschrep wschrep 445 Jan 19 22:03 loopmacro
 ```
 
+## Fibonacci
+
+Here the first 91 Fibonacci numbers calculated using an executable that is static and only 374 bytes:
+
+```
+./fib
+0
+1
+1
+2
+3
+5
+8
+13
+21
+34
+55
+89
+144
+
+...
+
+679891637638612258
+1100087778366101931
+1779979416004714189
+2880067194370816120
+```
+
 ## DISASSEMBLE
 
 How to disassemble these binaries, a little howto:
